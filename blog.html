@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Aurangzeb" content="blog, initial-scale=1.0">
+    <title>aurangzeb's blog</title>
+</head>
+<body>
+<i><h1 id="myheader">welcome to my blog</h1></i>
+<article>
+    <h2>About me:</h2>
+    <p>My name is Aurangzeb, and I’m a 10-year-old front-end developer with a deep passion for building beautiful, functional websites. Ever since I wrote my first line of HTML, I’ve been fascinated by how code can shape the way people interact with the web. I enjoy working with technologies like HTML, CSS, and JavaScript to create responsive, user-friendly designs that look great on any device.</p>
+</article>
+<hr>
+<h1>guess my favourite food:</h1>
+
+<body>
+    <label for="favourite food">guess my favourite food:</label>
+
+
+    <label for="food">Choose your favorite food:</label>
+    <select id="food" name="food">
+      <option value="wings">Wings</option>
+      <option value="chips">Chips</option>
+      <option value="pizza">Pizza</option>
+      <option value="burger">Burger</option>
+    </select>
+
+    <button onclick="checkFood()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+    function checkFood() {
+      const food = document.getElementById("food").value;
+      let message = "";
+      if (food === "wings" || food === "chips") {
+        message = "Correct!";
+      } else {
+        message = "Incorrect!";
+      }
+      document.getElementById("result").textContent = message;
+    }
+    </script>
+</body>
+<hr>
+<h4>
+    my hobbies:
+    <ul>
+        <li>playing cricket &#127951</li>
+        <li>watching movies on youtube &#128187</li>
+        <li>coding &#128187</li>
+        <li>playing football &#9917</li>
+        <li>reading goosbump books &#128214</li>
+        <li>playing uno &#127199</li>
+    </ul>
+</h4>
+<hr>
+
+    <form action="/actup.html">
+        <textarea rows="2" cols="20" name="usrtxt" wrap="hard">
+name:
+email:
+        </textarea>
+        <input type="submit">
+        </form>
